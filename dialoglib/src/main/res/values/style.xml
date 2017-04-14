@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AnimLeft">
+        <item name="android:windowEnterAnimation">@anim/from_left</item>
+        <item name="android:windowExitAnimation">@anim/to_left</item>
+    </style>
+
+    <style name="AnimRight">
+        <item name="android:windowEnterAnimation">@anim/from_right</item>
+        <item name="android:windowExitAnimation">@anim/to_right</item>
+    </style>
+
+    <style name="AnimUp">
+        <item name="android:windowEnterAnimation">@anim/from_up</item>
+        <item name="android:windowExitAnimation">@anim/to_up</item>
+    </style>
+
+    <style name="AnimDown">
+        <item name="android:windowEnterAnimation">@anim/from_down</item>
+        <item name="android:windowExitAnimation">@anim/to_down</item>
+    </style>
+
+    <style name="AnimLeftRight">
+        <item name="android:windowEnterAnimation">@anim/from_left</item>
+        <item name="android:windowExitAnimation">@anim/to_right</item>
+    </style>
+
+    <style name="AnimUpDown">
+        <item name="android:windowEnterAnimation">@anim/from_up</item>
+        <item name="android:windowExitAnimation">@anim/to_down</item>
+    </style>
+
+    <style name="AnimFadeInOut">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="AnimZoomInOut">
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/zoom_out</item>
+    </style>
+
+</resources>
