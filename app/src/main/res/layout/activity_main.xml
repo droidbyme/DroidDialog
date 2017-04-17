@@ -1,15 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.droidbyme.droiddialog.MainActivity">
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:onClick="openDialog"
-        android:text="Click Me" />
+        android:layout_margin="12dp"
+        android:background="@color/button_bg"
+        android:onClick="openDialog1"
+        android:text="With Title, Content"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
 
-</RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/button_bg"
+        android:onClick="openDialog2"
+        android:text="With Icon, Title, Content"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/button_bg"
+        android:onClick="openDialog3"
+        android:text="With Icon, Title, Long Content"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/button_bg"
+        android:onClick="openDialog4"
+        android:text="With Icon, Title, Content, Typeface"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/button_bg"
+        android:onClick="openDialog5"
+        android:text="With Icon, Title, Content, Typeface, Animation"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/button_bg"
+        android:onClick="openDialog6"
+        android:text="With Icon, Title, Content, Divider"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:background="@color/button_bg"
+        android:onClick="openDialog"
+        android:text="With All Including"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

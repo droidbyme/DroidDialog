@@ -172,14 +172,14 @@ public class DroidDialog {
 
         // default values
         private Context context;
-        private int icon = R.drawable.ic_action_tick;
+        private int icon = 0;
         private String title = "Title";
         private String content = "Content Description";
 
         private boolean isCancelable = true;
         private boolean isCancelableTouchOutside = false;
 
-        private String positiveText = "Yes";
+        private String positiveText = "";
         private onPositiveListener onPositiveListener = new onPositiveListener() {
             @Override
             public void onPositive(Dialog droidDialog) {
@@ -187,7 +187,7 @@ public class DroidDialog {
             }
         };
 
-        private String negativeText = "No";
+        private String negativeText = "";
         private onNegativeListener onNegativeListener = new onNegativeListener() {
             @Override
             public void onNegative(Dialog droidDialog) {

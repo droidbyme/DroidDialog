@@ -39,7 +39,7 @@ dependencies {
 
 ### Usage
 
-- Create Builder Pattern for default Dialog.<br>Default Dialog has tick_mark icon, "Title" as dialog title, "Content Description" as content, "Yes" & "No" buttons.
+- Create Builder Pattern for default Dialog.<br>Default Dialog has "Title" as dialog title, "Content Description" as content, "Yes" & "No" buttons.
 ~~~
     new DroidDialog.Builder(context)
                     .show();

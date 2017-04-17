@@ -8,7 +8,7 @@
         android:id="@+id/iconLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary">
+        android:background="@color/indigo">
 
         <ImageView
             android:id="@+id/imgIcon"
@@ -72,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="NO"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/dark_indigo"
             android:textStyle="bold" />
 
         <Button
@@ -81,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Neutral"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/dark_indigo"
             android:textStyle="bold" />
 
         <Button
@@ -90,7 +90,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="YES"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/dark_indigo"
             android:textStyle="bold" />
 
     </LinearLayout>
