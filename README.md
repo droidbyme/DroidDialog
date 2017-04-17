@@ -6,6 +6,8 @@ Example is available in app module.
 <p>
 <img src="https://github.com/droidbyme/DroidDialog/blob/master/app/src/main/assets/device-2017-04-12-193622.png" alt="screenshot" width="270">
 
+[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+
 <img src="https://github.com/droidbyme/DroidDialog/blob/master/app/src/main/assets/device-2017-04-12-193442.png" alt="screenshot" width="270">
 
 <img src="https://github.com/droidbyme/DroidDialog/blob/master/app/src/main/assets/device-2017-04-12-195446.png" alt="screenshot" width="270">
