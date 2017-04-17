@@ -6,7 +6,7 @@ Example is available in app module.
 <p>
 <img src="https://github.com/droidbyme/DroidDialog/blob/master/app/src/main/assets/device-2017-04-12-193622.png" alt="screenshot" width="270">
 
-[![ScreenShot](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+[![Alt text for your video](https://img.youtube.com/vi/T-D1KVIuvjA/0.jpg)](http://www.youtube.com/watch?v=T-D1KVIuvjA)
 
 <img src="https://github.com/droidbyme/DroidDialog/blob/master/app/src/main/assets/device-2017-04-12-193442.png" alt="screenshot" width="270">
 
