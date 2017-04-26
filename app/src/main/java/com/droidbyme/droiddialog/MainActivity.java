@@ -13,7 +13,6 @@ import com.droidbyme.dialoglib.DroidDialog;
 
 public class MainActivity extends AppCompatActivity {
 
-
     private Context context;
 
     @Override
