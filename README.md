@@ -14,7 +14,7 @@ Example is available in app module.
 
 </p>
 
-<!--
+
 ## Download
 
 ### Gradle dependency:
@@ -30,10 +30,10 @@ allprojects {
 - Add this to your app build.gradle:
 ~~~
 dependencies {
-	compile 'com.github.vatsaldesai92:MyDynamicCalendarLibrary:1.0.1'
+	compile 'com.github.droidbyme:DroidDialog:d4b5af0f48'
 }
 ~~~
-
+<!--
  <p>
 <a href="https://play.google.com/store/apps/details?id=com.desai.vatsal.myamazingcalendar&hl=en">
 <img src="https://github.com/vatsaldesai92/MyDynamicCalendarLibrary/blob/master/app/src/main/assets/google_play_icon.png" alt="screenshot" width="270">
