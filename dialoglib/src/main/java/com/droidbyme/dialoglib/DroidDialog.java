@@ -21,9 +21,11 @@ import android.widget.TextView;
 
 public class DroidDialog {
 
+    public Dialog dialog = null;
+
     public DroidDialog(final Builder builder) {
 
-        final Dialog dialog = new Dialog(builder.context);
+        dialog = new Dialog(builder.context);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         View view = LayoutInflater.from(builder.context).inflate(R.layout.layout_dialog, null);
         dialog.setContentView(view);
@@ -165,6 +167,11 @@ public class DroidDialog {
         dialog.setCanceledOnTouchOutside(builder.isCancelableTouchOutside);
 
         dialog.show();
+    }
+
+    public void dismiss() {
+        if (dialog != null)
+            dialog.dismiss();
     }
 
 

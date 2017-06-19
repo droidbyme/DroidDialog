@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         new DroidDialog.Builder(context)
                 .title("All Well!")
                 .content(getString(R.string.short_text))
-                .cancelable(true, true)
+                .cancelable(false, false)
                 .positiveButton("OK", new DroidDialog.onPositiveListener() {
                     @Override
                     public void onPositive(Dialog droidDialog) {
