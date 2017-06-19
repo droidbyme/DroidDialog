@@ -242,6 +242,16 @@ default : `.divider(false, ContextCompat.getColor(context, R.color.orange))`
                     .show();
 ~~~
 
+- Dismiss Droid Dialog<br>`.dismiss()`
+~~~
+    DroidDialog dialog = new DroidDialog.Builder(context)
+                    .icon(R.drawable.ic_action_tick)
+                    .title("All Well!")
+                    .content(getString(R.string.short_text))
+                    .show();
+                    
+    dialog.dismiss();
+~~~
 
 ### License
 ~~~
