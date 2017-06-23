@@ -30,7 +30,7 @@ allprojects {
 - Add this to your app build.gradle:
 ~~~
 dependencies {
-	compile 'com.github.droidbyme:DroidDialog:d4b5af0f48'
+	compile 'com.github.droidbyme:DroidDialog:c6decc7167'
 }
 ~~~
 <!--
