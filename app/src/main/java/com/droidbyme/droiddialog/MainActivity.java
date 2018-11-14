@@ -1,7 +1,6 @@
 package com.droidbyme.droiddialog;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -13,17 +12,14 @@ import com.droidbyme.dialoglib.DroidDialog;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Context context;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        context = this;
     }
 
     public void openDialog(View view) {
-        new DroidDialog.Builder(context)
+        new DroidDialog.Builder(MainActivity.this)
                 .icon(R.drawable.ic_action_tick)
                 .title("All Well!")
                 .content(getString(R.string.short_text))
@@ -32,40 +28,40 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onPositive(Dialog droidDialog) {
                         droidDialog.dismiss();
-                        Toast.makeText(context, "YES", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "YES", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .negativeButton("No", new DroidDialog.onNegativeListener() {
                     @Override
                     public void onNegative(Dialog droidDialog) {
                         droidDialog.dismiss();
-                        Toast.makeText(context, "No", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "No", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .neutralButton("SKIP", new DroidDialog.onNeutralListener() {
                     @Override
                     public void onNeutral(Dialog droidDialog) {
                         droidDialog.dismiss();
-                        Toast.makeText(context, "Skip", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Skip", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .typeface("regular.ttf")
                 .animation(AnimUtils.AnimZoomInOut)
-                .color(ContextCompat.getColor(context, R.color.indigo), ContextCompat.getColor(context, R.color.white),
-                        ContextCompat.getColor(context, R.color.dark_indigo))
-                .divider(true, ContextCompat.getColor(context, R.color.orange))
+                .color(ContextCompat.getColor(MainActivity.this, R.color.indigo), ContextCompat.getColor(MainActivity.this, R.color.white),
+                        ContextCompat.getColor(MainActivity.this, R.color.dark_indigo))
+                .divider(true, ContextCompat.getColor(MainActivity.this, R.color.orange))
                 .show();
     }
 
     public void openDialog1(View view) {
-        new DroidDialog.Builder(context)
+        new DroidDialog.Builder(MainActivity.this)
                 .title("All Well!")
                 .content(getString(R.string.short_text))
                 .cancelable(false, false)
                 .positiveButton("OK", new DroidDialog.onPositiveListener() {
                     @Override
                     public void onPositive(Dialog droidDialog) {
-                        Toast.makeText(context, "ok", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "ok", Toast.LENGTH_SHORT).show();
                         droidDialog.dismiss();
                     }
                 })
@@ -73,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openDialog2(View view) {
-        new DroidDialog.Builder(context)
+        new DroidDialog.Builder(MainActivity.this)
                 .icon(R.drawable.ic_action_tick)
                 .title("All Well!")
                 .content(getString(R.string.short_text))
@@ -81,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
                 .positiveButton("OK", new DroidDialog.onPositiveListener() {
                     @Override
                     public void onPositive(Dialog droidDialog) {
-                        Toast.makeText(context, "ok", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "ok", Toast.LENGTH_SHORT).show();
                         droidDialog.dismiss();
                     }
                 })
@@ -89,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openDialog6(View view) {
-        new DroidDialog.Builder(context)
+        new DroidDialog.Builder(MainActivity.this)
                 .icon(R.drawable.ic_action_tick)
                 .title("All Well!")
                 .content(getString(R.string.short_text))
@@ -98,19 +94,19 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onPositive(Dialog droidDialog) {
                         droidDialog.dismiss();
-                        Toast.makeText(context, "Ok", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Ok", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .typeface("regular.ttf")
                 .animation(AnimUtils.AnimFadeInOut)
-                .color(ContextCompat.getColor(context, R.color.indigo), ContextCompat.getColor(context, R.color.white),
-                        ContextCompat.getColor(context, R.color.dark_indigo))
-                .divider(true, ContextCompat.getColor(context, R.color.orange))
+                .color(ContextCompat.getColor(MainActivity.this, R.color.indigo), ContextCompat.getColor(MainActivity.this, R.color.white),
+                        ContextCompat.getColor(MainActivity.this, R.color.dark_indigo))
+                .divider(true, ContextCompat.getColor(MainActivity.this, R.color.orange))
                 .show();
     }
 
     public void openDialog5(View view) {
-        new DroidDialog.Builder(context)
+        new DroidDialog.Builder(MainActivity.this)
                 .icon(R.drawable.ic_action_tick)
                 .title("All Well!")
                 .content(getString(R.string.short_text))
@@ -119,14 +115,14 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onPositive(Dialog droidDialog) {
                         droidDialog.dismiss();
-                        Toast.makeText(context, "Yes", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Yes", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .negativeButton("No", new DroidDialog.onNegativeListener() {
                     @Override
                     public void onNegative(Dialog droidDialog) {
                         droidDialog.dismiss();
-                        Toast.makeText(context, "No", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "No", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .typeface("regular.ttf")
@@ -135,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openDialog4(View view) {
-        new DroidDialog.Builder(context)
+        new DroidDialog.Builder(MainActivity.this)
                 .icon(R.drawable.ic_action_tick)
                 .title("Expiry")
                 .content(getString(R.string.dummy_text))
@@ -163,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openDialog3(View view) {
-        new DroidDialog.Builder(context)
+        new DroidDialog.Builder(MainActivity.this)
                 .icon(R.drawable.ic_action_tick)
                 .title("All Well!")
                 .content(getString(R.string.long_text))
@@ -171,7 +167,7 @@ public class MainActivity extends AppCompatActivity {
                 .positiveButton("OK", new DroidDialog.onPositiveListener() {
                     @Override
                     public void onPositive(Dialog droidDialog) {
-                        Toast.makeText(context, "ok", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "ok", Toast.LENGTH_SHORT).show();
                         droidDialog.dismiss();
                     }
                 })
